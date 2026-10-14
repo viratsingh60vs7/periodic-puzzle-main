@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Chemistry Game: Periodic Puzzle</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="game-container">
+	<div class="game-header">
+		<div class="header-left">
+			<h1 class="game-title">Periodic Puzzle 🧪🧩👩‍🔬</h1>
+			<div class="stats-container">
+				<div id="score-display" class="score-display"></div>
+				<div id="level-display" class="level-display"></div>
+				<div id="timer-display" class="timer-display"></div>
+			</div>
+		</div>
+		<div class="header-right">
+			<button id="reset-button" class="button">Start</button>
+			<button id="pause-button" class="button">Pause</button>
+			<button id="shuffle-button" class="button">Shuffle</button>
+		</div>
+	</div>
+
+	<div id="elements-pool" class="elements-container">
+		<!-- Elements will be generated here by JavaScript -->
+	</div>
+
+	<div class="legend">
+		<div class="legend-item">
+			<span class="color-box alkali-metal"></span>Alkali Metals
+		</div>
+		<div class="legend-item">
+			<span class="color-box alkaline-earth"></span>Alkaline Earth Metals
+		</div>
+		<div class="legend-item">
+			<span class="color-box transition"></span>Transition Metals
+		</div>
+		<div class="legend-item">
+			<span class="color-box post-transition"></span>Post-Transition Metals
+		</div>
+		<div class="legend-item">
+			<span class="color-box metalloid"></span>Metalloids
+		</div>
+		<div class="legend-item">
+			<span class="color-box nonmetal"></span>Nonmetals
+		</div>
+		<div class="legend-item">
+			<span class="color-box noble-gas"></span>Noble Gases
+		</div>
+		<div class="legend-item">
+			<span class="color-box lanthanide"></span>Lanthanides
+		</div>
+		<div class="legend-item">
+			<span class="color-box actinide"></span>Actinides
+		</div>
+	</div>
+
+	<div class="periodic-table-container">
+		<div id="periodic-grid" class="periodic-grid">
+			<!-- Drop zones will be generated here by JavaScript -->
+		</div>
+		<!-- Sub-periodic grid will be appended here by JavaScript -->
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
